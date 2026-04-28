@@ -10,11 +10,11 @@ public class atv_12 {
         System.out.println("Sistema de checagem de refugo (Caso 5 peças forem produzidas com defeito a produção ser interrompida).");
 
         do {
-            System.out.println("Aperte 1 - OK\nAperte 2 - DEFEITO");
+            System.out.println("Aperte 0 - OK\nAperte 1 - DEFEITO");
             n = sc.nextInt();
-            if (n == 1){
+            if (n == 0){
                 System.out.println("Peça OK, sem defeito.\nContinuando...");
-            }else if (n ==2){
+            }else if (n ==1){
                 cont++;
                 System.out.println("Peça DEFEITUOSA. Contagem de paças defeituosas: "+cont);
                 if (cont<5){
