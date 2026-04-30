@@ -8,10 +8,10 @@ public class atv_19 {
 
         System.out.println("Iniciando aceleração do motor...");
 
-        while (rpmAtual <= rpmLimite) {
+        do {
             System.out.println("Rotação atual: " + rpmAtual + " RPM");
             rpmAtual = rpmAtual + incremento;
-        }
+        } while  (rpmAtual <= rpmLimite)
         System.out.println("Limite de 3000 RPM atingido. Estabilizando motor.");
     }
 }
